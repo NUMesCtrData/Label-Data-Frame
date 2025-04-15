@@ -1,4 +1,4 @@
-### 🏷️ `label_data()`
+### 🏷️ `label_redcap_data()`
 
 This function applies **variable labels** to a REDCap dataset using a formatted **data dictionary** (e.g., generated from `read_data_dict()`).
 
@@ -10,7 +10,7 @@ Labeling variables makes data easier to understand during analysis by providing 
 #### ⚙️ Usage
 
 ```r
-labeled_df <- label_data(data_dict, data)
+labeled_df <- label_redcap_data(data_dict, data)
 ```
 
 - `data_dict`: A data frame containing at least the columns `field_name` and `field_label`. Typically created by `read_data_dict()`.
@@ -21,7 +21,7 @@ labeled_df <- label_data(data_dict, data)
 #### ✅ Example
 
 ```r
-df <- label_data(data_dict, df)
+df <- label_redcap_data(data_dict, df)
 ```
 
 After labeling, functions like `summary()`, `str()`, or `Hmisc::describe()` will display the human-readable labels for variables.
