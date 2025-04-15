@@ -5,6 +5,8 @@ This function applies **variable labels** to a REDCap dataset using a formatted 
 Labeling variables makes data easier to understand during analysis by providing human-readable descriptions of what each field represents.
 
 #### 💡 Link to Code: https://github.com/NUMesCtrData/Label-Data-Frame/blob/main/label_data
+
+### Works well after running the read_rc_data_dict() function to export and clean the REDCap data dictionary
 ---
 
 #### ⚙️ Usage
