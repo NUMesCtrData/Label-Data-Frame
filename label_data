@@ -2,7 +2,7 @@
 # Read in a data dictionary to label the REDCap dataset
 # so that it is easier to identify what each variable refers to.
 
-label_data <- function(data_dict, data){
+label_redcap_data <- function(data_dict, data){
   for (x in 1:nrow(data_dict)){
     var <- data_dict$field_name[x]
     lab <- data_dict$field_label[x]
